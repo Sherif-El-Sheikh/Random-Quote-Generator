@@ -1,0 +1,160 @@
+body {
+    font-family: 'Merienda', cursive;
+    background-color: #d5d5d3;
+}
+.create-quote .quote-title h1 {
+    font-size: 80px;
+}
+.create-quote .quote-title p {
+    font-size: 22px;
+}
+
+@media(max-width: 991px) {
+    .create-quote .quote-title h1 {
+        font-size: 60px;
+    }
+    .create-quote .quote-title p {
+        font-size: 18px;
+    }
+    .create-quote .generate-quote .btn-quote {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 768px) {
+    .create-quote .quote-title h1 {
+        font-size: 40px;
+    }
+    .create-quote .quote-title p {
+        font-size: 15px;
+    }
+    .create-quote .generate-quote .btn-quote {
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+}
+
+.create-quote .generate-quote .btn-quote {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 25px;
+    border: 2px solid #383737;
+    border-radius: 0.3125rem;
+    -webkit-transition: all 0.5s 0.1s;
+    -o-transition: all 0.5s 0.1s;
+    transition: all 0.5s 0.1s;
+}
+.btn-quote:hover {
+    color: white;
+}
+.btn-quote::after {
+    content: '';
+    position: absolute;
+    background-color: #383737;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn-quote:hover::after {
+    opacity: 1;
+    height: 100%;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg); 
+}
+
+.create-quote .quote-box {
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgb(240 240 240);
+}
+
+.create-quote .quote-box {
+    position: relative;
+    padding: 20px;
+    border: 6px inset #d5d5d3;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.create-quote .quote-box:before,
+.create-quote .quote-box:after {
+    content: '';
+    font-size: 40px;
+    position: absolute;
+}
+
+.create-quote .quote-box:before {
+    top: -40px;
+    content: '\f10d';
+    font-family: 'Font Awesome\ 5 Free';
+    left: -20px;
+    background-color: white;
+    mix-blend-mode: multiply;
+}
+
+.create-quote .quote-box:after {
+    bottom: -25px;
+    content: '\f10e';
+    font-family: 'Font Awesome\ 5 Free';
+    right: -20px;
+}
+
+@media(max-width: 767px) {
+    .create-quote .quote-box:before {
+        top: -50px;
+        left: -15px;
+    }
+    .create-quote .quote-box:after {
+        bottom: -30px;
+        right: -30px;
+    }
+}
+@media(max-width: 765px) {
+    .create-quote .quote-box:before {
+        top: -50px;
+        left: -10px;
+    }
+    .create-quote .quote-box:after {
+        bottom: -30px;
+        right: -10px;
+    }
+}
+
+.create-quote .quote-box p.author {
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+.create-quote .quote-box img {
+    width: 12%;
+}
+
+@media(max-width: 767px) {
+    .create-quote .quote-box img {
+        width: 16%;
+    }
+}
+.create-quote .quote-box .sound {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.create-quote .quote-box i {
+    font-size: 25px;
+    margin-top: 5px;
+}

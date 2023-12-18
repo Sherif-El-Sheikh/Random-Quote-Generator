@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="Assets/img/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Handlee&family=Merienda:wght@400;500;600;700;800&family=Moon+Dance&display=swap"
+        rel="stylesheet">
+    <!-- Font Awsome Library -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="Css/style.css">
+    
+</head>
+<body>
+    <section id="" class="create-quote vh-100 py-3">
+        <div class="container">
+            <div class="quote-title text-center">
+                <h1 class=" text-capitalize fw-bolder py-3">Quote of the Day</h1>
+                <p class="mb-3 fw-semibold">Press the button below to receive a random quote!</p>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="generate-quote d-flex justify-content-center align-items-center">
+                        <button onclick="generateQuote()" class=" btn my-3 btn-quote d-block">New Quote</button>
+                    </div>
+                    <div class="quote-box card p-3">
+                        <div id="photo" class=" overflow-hidden "></div>
+                        <p id="author" class="author mt-3 mx-3 text-capitalize"></p>
+                        <p id="quote" class="quote mt-1 text-center rounded-4 m-auto"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
